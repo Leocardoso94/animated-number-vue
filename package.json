@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name animated-number-vue ./src/AnimatedNumber",
+    "build": "vue-cli-service build --target lib --name AnimatedNumber ./src/AnimatedNumber",
     "test": "vue-cli-service test",
     "lint": "vue-cli-service lint"
   },
@@ -38,6 +38,6 @@
   "repository": "https://github.com/Leocardoso94/animated-number-vue.git",
   "author": "Leonardo Cardoso <leocardosoTI@gmail.com>",
   "license": "MIT",
-  "unpkg": "dist/animated-number-vue.umd.min.js",
-  "jsdelivr": "dist/animated-number-vue.umd.min.js"
+  "unpkg": "dist/AnimatedNumber.umd.min.js",
+  "jsdelivr": "dist/AnimatedNumber.umd.min.js"
 }
