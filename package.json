@@ -1,6 +1,6 @@
 {
   "name": "animated-number-vue",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -33,6 +33,6 @@
   "repository": "https://github.com/Leocardoso94/animated-number-vue.git",
   "author": "Leonardo Cardoso <leocardosoTI@gmail.com>",
   "license": "MIT",
-  "unpkg": "umd/animated-number-vue.umd.min.js",
-  "jsdelivr": "umd/animated-number-vue.umd.min.js"
+  "unpkg": "dist/animated-number-vue.umd.min.js",
+  "jsdelivr": "dist/animated-number-vue.umd.min.js"
 }
