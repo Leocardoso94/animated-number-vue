@@ -3,6 +3,7 @@
 ![npm](https://img.shields.io/npm/dt/animated-number-vue.svg) [![Build Status](https://travis-ci.org/Leocardoso94/animated-number-vue.svg?branch=master)](https://travis-ci.org/Leocardoso94/animated-number-vue)  [![](https://data.jsdelivr.com/v1/package/npm/animated-number-vue/badge)](https://www.jsdelivr.com/package/npm/animated-number-vue) ![](http://img.badgesize.io/leocardoso94/animated-number-vue/master/dist/AnimatedNumber.umd.min.js)
 
 >A simple vue animated number for Vue2, using [anime](https://github.com/juliangarnier/anime). 
+>Live demo [here](https://codesandbox.io/s/v68x95mo3)
 
 ![](https://media.giphy.com/media/3Fnc5buwtaxS1n0J3L/giphy.gif)
 
@@ -42,6 +43,9 @@ export default {
 };
 </script>
 ````
+[View demo here](https://codesandbox.io/s/v68x95mo3)
+[![Edit animated-number-vue](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/v68x95mo30)
+
 
 ## Props
 Follwing `props` are used while initialization
