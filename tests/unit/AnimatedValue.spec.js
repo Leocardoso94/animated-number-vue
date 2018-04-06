@@ -45,7 +45,7 @@ describe('AnimatedNumber.vue', () => {
     }, durationOfAnimation + 100);
   });
 
-  it('should call the animateValue when value props change ', () => {
+  it('should call the animateValue when props.value change ', () => {
     const spy = jest.spyOn(wrapper.vm, 'animateValue');
     wrapper.setProps({ value: 1000 });
     expect(spy).toHaveBeenCalled();
