@@ -1,4 +1,5 @@
-# animated-number-vue
+# animated-number-vue 
+[![](https://data.jsdelivr.com/v1/package/npm/animated-number-vue/badge)](https://www.jsdelivr.com/package/npm/animated-number-vue)
 >A simple vue animated number for Vue2, using [anime](https://github.com/juliangarnier/anime). 
 
 ![](https://media.giphy.com/media/3Fnc5buwtaxS1n0J3L/giphy.gif)
