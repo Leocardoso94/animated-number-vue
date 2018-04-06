@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- 8.9.4
+cache:
+  yarn: true
+  directories:
+  - node_modules
+script:
+- yarn lint
+- yarn test
+- yarn build
+
+deploy:
+  provider: npm
+  email: leocardosoti@gmail.com
+  api_key:
+    secure: Kvc5tWKYCQyqy07B2AkxU3g7bhaZKhKzMIxTBHTQCn+TLBZABprIdJmV4rZc33uce4E2ydvWAAC7EYro8dnmjq1RsU7uRKSXIL6gzEQqlr0oUFx7CrYVyOubdjtOGky+n9lp8XEcx2vMGrpUWS2fwUe1odsmv6hHUtaSJTgDWE5YAUh60X5TaOmZhA/StnrqhQjHJ+567xxjz8p0AIZNI10sa7YFp9f+CLGt+SEIkeVpltUPVGYNijwMo4cdRV3XaUUuhYY25hvcvUFGC7I2IN+0Pcp/vI76axkgFJ81KRucE7gXNWd9c5G9DPIvREGtxnCzAbZaelUVKZjuaXqNveMWLJQn1oVaPtrK075rqiG3jDmEl5UY4+bp0CyEOJT95MJ8C7wlhv4BdhohC2apEYfd3RuUUa/pcz/SunrIItf4LhUXyyNOjpKVIlosNMv31m/rG13z3xW5aE7EQGOmD7bHxQGGMn3IMuf0AM3nd2MksF27xGWlfXAPTB0slP/GzDtADxChZMiGJ3A70H5GWfipHlu7IOwYKe7F6rFMYcWLwkYUtT81PJHngDgdYOpdXPpjrfllyJAfDbppIVyUUNK83Lv6fp5nrJP7kOLNnIVdxQrzIS7G+cFPvd5THxgAxoKxLE+sqiCg496aujs+0aPwXyWgdh0CI8veWZrNRjQ=
+  on:
+    tags: true
+    repo: Leocardoso94/animated-number-vue
