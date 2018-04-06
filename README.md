@@ -1,5 +1,5 @@
 # animated-number-vue 
-[![Build Status](https://travis-ci.org/Leocardoso94/animated-number-vue.svg?branch=master)](https://travis-ci.org/Leocardoso94/animated-number-vue)  [![](https://data.jsdelivr.com/v1/package/npm/animated-number-vue/badge)](https://www.jsdelivr.com/package/npm/animated-number-vue)
+[![Build Status](https://travis-ci.org/Leocardoso94/animated-number-vue.svg?branch=master)](https://travis-ci.org/Leocardoso94/animated-number-vue)  [![](https://data.jsdelivr.com/v1/package/npm/animated-number-vue/badge)](https://www.jsdelivr.com/package/npm/animated-number-vue) ![](http://img.badgesize.io/leocardoso94/animated-number-vue/master/dist/animated-number-vue.umd.min.js)
 
 >A simple vue animated number for Vue2, using [anime](https://github.com/juliangarnier/anime). 
 
