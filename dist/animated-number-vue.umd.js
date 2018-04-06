@@ -100,7 +100,10 @@ var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
 
 /* harmony default export */ var AnimatedNumber = ({
   props: {
-    value: [Number, String],
+    value: {
+      type: [Number, String],
+      required: true
+    },
     formatValue: {
       type: Function,
       default: function _default(value) {
@@ -135,7 +138,7 @@ var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-62e75d93","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/AnimatedNumber.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-13da75d0","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/AnimatedNumber.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',[_vm._v(_vm._s(_vm.formatValue(_vm.animatedValue)))])}
 var staticRenderFns = []
 
