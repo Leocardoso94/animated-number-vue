@@ -6,7 +6,10 @@ import anime from 'animejs';
 
 export default {
   props: {
-    value: [Number, String],
+    value: {
+      type: [Number, String],
+      required: true,
+    },
     formatValue: {
       type: Function,
       default: value => value,
