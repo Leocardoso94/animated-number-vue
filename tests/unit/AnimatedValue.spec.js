@@ -3,16 +3,18 @@ import AnimatedNumber from '@/AnimatedNumber.vue';
 
 describe('AnimatedNumber.vue', () => {
   let durationOfAnimation;
+  let wrapper;
+  let value;
 
   beforeEach(() => {
     durationOfAnimation = 1000;
+    value = 10;
+    wrapper = shallow(AnimatedNumber, {
+      propsData: { value },
+    });
   });
 
   it('renders props.value when passed', (done) => {
-    const value = 10;
-    const wrapper = shallow(AnimatedNumber, {
-      propsData: { value },
-    });
     setTimeout(() => {
       expect(wrapper.text()).toBe(value.toString());
       done();
@@ -20,10 +22,6 @@ describe('AnimatedNumber.vue', () => {
   });
 
   it('renders a float value when passed', (done) => {
-    const value = 10.5;
-    const wrapper = shallow(AnimatedNumber, {
-      propsData: { value },
-    });
     setTimeout(() => {
       expect(wrapper.text()).toBe(value.toString());
       done();
@@ -31,13 +29,7 @@ describe('AnimatedNumber.vue', () => {
   });
 
   it('renders the correct value when the duration is equal 100', (done) => {
-    durationOfAnimation = 100;
-    const value = 10;
-
-    const wrapper = shallow(AnimatedNumber, {
-      propsData: { value, duration: durationOfAnimation },
-    });
-
+    wrapper.setProps({ duration: durationOfAnimation });
     setTimeout(() => {
       expect(wrapper.text()).toBe(value.toString());
       done();
@@ -45,17 +37,17 @@ describe('AnimatedNumber.vue', () => {
   });
 
   it('renders $ 10.00  when a format function is passsed', (done) => {
-    const value = 10;
-
     const formatValue = value_ => `$ ${Number(value_).toFixed(2)}`;
-
-    const wrapper = shallow(AnimatedNumber, {
-      propsData: { value, formatValue },
-    });
-
+    wrapper.setProps({ formatValue });
     setTimeout(() => {
       expect(wrapper.text()).toBe(`$ ${value}.00`);
       done();
     }, durationOfAnimation + 100);
+  });
+
+  it('should call the animateValue when value props change ', () => {
+    const spy = jest.spyOn(wrapper.vm, 'animateValue');
+    wrapper.setProps({ value: 1000 });
+    expect(spy).toHaveBeenCalled();
   });
 });
