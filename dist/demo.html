@@ -1,0 +1,16 @@
+<title>animated-number-vue demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./animated-number-vue.umd.js"></script>
+<link rel="stylesheet" href="./animated-number-vue.css">
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: animated-number-vue
+  }
+}).$mount('#app')
+</script>
