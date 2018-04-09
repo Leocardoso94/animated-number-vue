@@ -55,8 +55,48 @@ Following `props` are used while initialization
 | Prop Name | Type | Description |
 |----------|------|--------------|
 | value `(required)`| [ Number, String] | number that will be animated |
-| formatValue `(optional)`| Function | a function that will manipulate the animated value |
 | duration `(optional)`| Number | the duration of animation |
-| easing `default = linear`| String | You can found all valid values [here](https://github.com/juliangarnier/anime#easing-functions) |
+| delay `(optional)`| Number | the delay of animation |
+| easing `(optional)`| String | you can found all valid values [here](https://github.com/juliangarnier/anime#easing-functions) |
 
----
+
+
+#### Callbacks props
+
+Execute a function at the beginning, during or when an animation or timeline is completed.
+
+| Names | Types | Arguments | Info
+| --- | --- | --- | ---
+| formatValue | Function | value `String` | A function that will manipulate the animated value |
+| update | Function| animation `Object` | Called at time = 0
+| run | Function| animation `Object` | Called after delay is finished
+| begin | Function | animation `Object` | Called after animation delay is over
+| complete | Function | animation `Object` | Called only after all the loops are completed
+
+### Format Value
+
+`formatValue()` is used to format the animatedValue.
+
+### Update
+
+`update()` is called on every frame while the instance is playing.
+
+
+### Begin
+
+`begin()` is called once after the delay is finished.
+
+
+
+Check if the animation has begun with `myAnimation.began`, return `true` or `false`.
+
+
+### Run
+
+`run()` is called every frame after the delay is finished.
+
+
+### Complete
+
+`complete()` is called once after the animation is finished.
+
