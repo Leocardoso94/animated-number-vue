@@ -14,6 +14,10 @@ export default {
       type: Function,
       default: value => value,
     },
+    easing: {
+      type: String,
+      default: 'linear',
+    },
     duration: {
       type: Number,
       default: 1000,
@@ -38,6 +42,7 @@ export default {
         targets: this,
         animatedValue: value,
         duration: this.duration,
+        easing: this.easing,
       });
     },
   },
