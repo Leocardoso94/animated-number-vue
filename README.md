@@ -6,7 +6,7 @@
 
 >Live demo [here](https://codesandbox.io/s/v68x95mo30)
 
-![](https://media.giphy.com/media/3Fnc5buwtaxS1n0J3L/giphy.gif)
+![](https://media.giphy.com/media/iMQAMgUSFrh7X2xBCZ/giphy.gif)
 
 ## Usage
 
