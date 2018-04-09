@@ -57,5 +57,6 @@ Following `props` are used while initialization
 | value `(required)`| [ Number, String] | number that will be animated |
 | formatValue `(optional)`| Function | a function that will manipulate the animated value |
 | duration `(optional)`| Number | the duration of animation |
+| easing `default = linear`| String | You can found all valid values [here](https://github.com/juliangarnier/anime#easing-functions) |
 
 ---

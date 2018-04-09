@@ -8,7 +8,7 @@
       <label for="">Duration of animation: </label>
       <input type="number" v-model="duration">
     </div>
-    <animated-number :value="value" :formatValue="formatToPrice" :duration="duration" />
+    <animated-number :value="value" :formatValue="formatToPrice" :duration="duration"/>
     <hr>
     <button @click="increase">Increase 500</button>
     <button @click="decrease">Decrease 500</button>
