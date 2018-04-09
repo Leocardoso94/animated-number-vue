@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       value: 1000
-    };
+    }
   },
   methods: {
     formatToPrice(value) {
@@ -49,7 +49,7 @@ export default {
 
 
 ## Props
-Follwing `props` are used while initialization
+Following `props` are used while initialization
 > Note : Only `value` is a required prop. Others are optional
 
 | Prop Name | Type | Description |
