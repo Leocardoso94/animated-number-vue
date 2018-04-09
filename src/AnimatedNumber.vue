@@ -22,6 +22,14 @@ export default {
       type: Number,
       default: 1000,
     },
+    update: Function,
+    begin: Function,
+    complete: Function,
+    run: Function,
+    delay: {
+      type: Number,
+      default: 0,
+    },
   },
   data() {
     return {
@@ -38,11 +46,19 @@ export default {
   },
   methods: {
     animateValue(value) {
+      const {
+        begin, easing, duration, complete, update, run, delay,
+      } = this;
       anime({
         targets: this,
         animatedValue: value,
-        duration: this.duration,
-        easing: this.easing,
+        duration,
+        easing,
+        update,
+        begin,
+        complete,
+        run,
+        delay,
       });
     },
   },
