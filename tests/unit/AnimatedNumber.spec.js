@@ -124,7 +124,6 @@ describe('AnimatedNumber.vue', () => {
     });
 
     setTimeout(() => {
-      console.log(counter);
       expect(counter).toBeGreaterThan(30);
       done();
     }, durationOfAnimation + 100);
