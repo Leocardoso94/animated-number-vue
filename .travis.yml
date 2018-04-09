@@ -7,7 +7,7 @@ cache:
   - node_modules
 script:
 - yarn lint
-- yarn test
+- yarn test --coverage
 - yarn build
 
 deploy:
