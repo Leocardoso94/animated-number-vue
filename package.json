@@ -1,12 +1,13 @@
 {
   "name": "animated-number-vue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name AnimatedNumber ./src/AnimatedNumber",
     "test": "vue-cli-service test",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepublish": "npm run test && npm run build"
   },
   "dependencies": {
     "animejs": "^2.2.0",
