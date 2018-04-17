@@ -110,9 +110,21 @@ var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
         return value;
       }
     },
+    easing: {
+      type: String,
+      default: 'linear'
+    },
     duration: {
       type: Number,
       default: 1000
+    },
+    update: Function,
+    begin: Function,
+    complete: Function,
+    run: Function,
+    delay: {
+      type: Number,
+      default: 0
     }
   },
   data: function data() {
@@ -130,16 +142,29 @@ var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
   },
   methods: {
     animateValue: function animateValue(value) {
+      var begin = this.begin,
+          easing = this.easing,
+          duration = this.duration,
+          complete = this.complete,
+          update = this.update,
+          run = this.run,
+          delay = this.delay;
       anime_min_default()({
         targets: this,
         animatedValue: value,
-        duration: this.duration
+        duration: duration,
+        easing: easing,
+        update: update,
+        begin: begin,
+        complete: complete,
+        run: run,
+        delay: delay
       });
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-13da75d0","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/AnimatedNumber.vue
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',[_vm._v(_vm._s(_vm.formatValue(_vm.animatedValue)))])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5990f810","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/AnimatedNumber.vue
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',[_vm._v(_vm._s(_vm.formatValue(Number(_vm.animatedValue))))])}
 var staticRenderFns = []
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/component-normalizer.js
