@@ -8,7 +8,7 @@
       <label for="">Duration of animation: </label>
       <input type="number" v-model="duration">
     </div>
-    <animated-number 
+    <animated-number
       :value="value"
       :formatValue="formatToPrice"
       :duration="duration"
@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     formatToPrice(value) {
-      return `$ ${Number(value).toFixed(2)}`;
+      return `$ ${value.toFixed(2)}`;
     },
     increase() {
       this.value = Number(this.value) + 500;

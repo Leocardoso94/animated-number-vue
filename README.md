@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     formatToPrice(value) {
-      return `R$ ${Number(value).toFixed(2)}`;
+      return `R$ ${value.toFixed(2)}`;
     }
   }
 };
@@ -67,7 +67,7 @@ Execute a function at the beginning, during or when an animation or timeline is 
 
 | Names | Types | Arguments | Info
 | --- | --- | --- | ---
-| formatValue | Function | value `String` | A function that will manipulate the animated value |
+| formatValue | Function | value `Number` | A function that will manipulate the animated value |
 | update | Function| animation `Object` | Called at time = 0
 | run | Function| animation `Object` | Called after delay is finished
 | begin | Function | animation `Object` | Called after animation delay is over

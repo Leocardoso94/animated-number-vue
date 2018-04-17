@@ -1,5 +1,5 @@
 <template>
-  <span>{{formatValue(animatedValue)}}</span>
+  <span>{{formatValue(Number(animatedValue))}}</span>
 </template>
 <script>
 import anime from 'animejs';

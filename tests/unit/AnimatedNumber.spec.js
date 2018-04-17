@@ -57,8 +57,17 @@ describe('AnimatedNumber.vue', () => {
     }, 2000);
   });
 
+
+  it('should return a Number when formatValue function is passed', () => {
+    const formatValue = value_ => value_;
+    wrapper.setProps({ formatValue });
+    const formatedValue = wrapper.vm.formatValue(value);
+    expect(formatedValue).toBe(value);
+    expect(typeof formatedValue).toBe('number');
+  });
+
   it('renders $ 10.00  when a format function is passsed', (done) => {
-    const formatValue = value_ => `$ ${Number(value_).toFixed(2)}`;
+    const formatValue = value_ => `$ ${value_.toFixed(2)}`;
     wrapper.setProps({ formatValue });
     setTimeout(() => {
       expect(wrapper.text()).toBe(`$ ${value}.00`);
