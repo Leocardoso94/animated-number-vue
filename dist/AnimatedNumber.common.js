@@ -84,7 +84,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var anime_min = __webpack_require__("A5qe");
 var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"C://sources//github//animated-value-vue//node_modules//.cache//cache-loader"}!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./src/AnimatedNumber.vue
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"C://Users//leonardo.cardoso//Sources//github//animated-number-vue//node_modules//.cache//cache-loader"}!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./src/AnimatedNumber.vue
 //
 //
 //
@@ -93,6 +93,7 @@ var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
   props: {
     value: {
       type: [Number, String],
+      default: '0',
       required: true
     },
     formatValue: {
@@ -154,7 +155,7 @@ var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5990f810","hasScoped":false,"optionsId":"1","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/AnimatedNumber.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-66941d85","hasScoped":false,"optionsId":"2","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/AnimatedNumber.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',[_vm._v(_vm._s(_vm.formatValue(Number(_vm.animatedValue))))])}
 var staticRenderFns = []
 
