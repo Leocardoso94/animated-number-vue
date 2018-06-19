@@ -8,6 +8,7 @@ export default {
   props: {
     value: {
       type: [Number, String],
+      default: '0',
       required: true,
     },
     formatValue: {
