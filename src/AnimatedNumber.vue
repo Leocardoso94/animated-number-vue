@@ -31,6 +31,9 @@ export default {
       type: Number,
       default: 0,
     },
+    round: {
+      default: null,
+    },
   },
   data() {
     return {
@@ -48,7 +51,14 @@ export default {
   methods: {
     animateValue(value) {
       const {
-        begin, easing, duration, complete, update, run, delay,
+        begin,
+        easing,
+        duration,
+        complete,
+        update,
+        run,
+        delay,
+        round,
       } = this;
       anime({
         targets: this,
@@ -60,6 +70,7 @@ export default {
         complete,
         run,
         delay,
+        round,
       });
     },
   },
