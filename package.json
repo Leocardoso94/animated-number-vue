@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name AnimatedNumber ./src/AnimatedNumber",
+    "build": "vue-cli-service build --target lib --name AnimatedNumber ./src/AnimatedNumber.vue",
     "test": "vue-cli-service test",
     "lint": "vue-cli-service lint",
     "prepublish": "npm run test && npm run build"
@@ -35,7 +35,7 @@
     "animated-number"
   ],
   "description": "A vue component with number animation",
-  "main": "./src/AnimatedNumber.vue",
+  "main": "dist/AnimatedNumber.umd.min.js",
   "repository": "https://github.com/Leocardoso94/animated-number-vue.git",
   "author": "Leonardo Cardoso <leocardosoTI@gmail.com>",
   "license": "MIT",
