@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name AnimatedNumber ./src/AnimatedNumber",
+    "build": "vue-cli-service build --target lib --name AnimatedNumber ./src/AnimatedNumber.vue",
     "test": "vue-cli-service test",
     "lint": "vue-cli-service lint",
     "prepublish": "npm run test && npm run build"
