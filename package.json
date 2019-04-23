@@ -35,7 +35,7 @@
     "animated-number"
   ],
   "description": "A vue component with number animation",
-  "main": "./src/AnimatedNumber.vue",
+  "main": "dist/AnimatedNumber.umd.min.js",
   "repository": "https://github.com/Leocardoso94/animated-number-vue.git",
   "author": "Leonardo Cardoso <leocardosoTI@gmail.com>",
   "license": "MIT",
