@@ -6,8 +6,7 @@
     "serve": "npx vue-cli-service serve",
     "build": "npx vue-cli-service build --target lib --name AnimatedNumber ./src/AnimatedNumber.vue",
     "test": "npx vue-cli-service test",
-    "lint": "npx vue-cli-service lint",
-    "prepublish": "npm run test && npm run build"
+    "lint": "npx vue-cli-service lint"
   },
   "dependencies": {
     "animejs": "^2.2.0",
