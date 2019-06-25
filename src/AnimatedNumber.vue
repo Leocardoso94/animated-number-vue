@@ -1,5 +1,5 @@
 <template>
-  <span>{{formatValue(Number(animatedValue))}}</span>
+  <span v-html="formatValue(Number(animatedValue))"></span>
 </template>
 <script>
 import anime from 'animejs';
