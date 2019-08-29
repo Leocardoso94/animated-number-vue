@@ -1,6 +1,6 @@
 {
   "name": "animated-number-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "serve": "npx vue-cli-service serve",
