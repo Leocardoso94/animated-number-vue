@@ -16,9 +16,9 @@ pull_request_rules:
         method: squash
   
   - name: merge pull requests from dependabot if CI passes
-  conditions:
-    - author=dependabot[bot]
-    - status-success=continuous-integration/travis/pr
-  actions:
-    merge:
-      method: merge
+    conditions:
+      - author=dependabot[bot]
+      - status-success=continuous-integration/travis/pr
+    actions:
+      merge:
+        method: squash
