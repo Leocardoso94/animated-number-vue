@@ -1,0 +1,24 @@
+pull_request_rules:
+  - name: automatic merge on CI success and review
+    conditions:
+      - status-success=continuous-integration/travis-ci/pr
+      - '#approved-reviews-by>=1'
+    actions:
+      merge:
+        method: squash
+        
+  - name: automatic merge on CI success
+    conditions:
+      - status-success=continuous-integration/travis-ci/pr
+      - author=Leocardoso94
+    actions:
+      merge:
+        method: squash
+  
+  - name: merge pull requests from dependabot if CI passes
+  conditions:
+  - author=dependabot[bot]
+  - status-success=continuous-integration/travis/pr
+  actions:
+    merge:
+      method: merge
