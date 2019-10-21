@@ -790,10 +790,10 @@
     babel-loader "^8.0.0-0"
 
 "@vue/cli-plugin-eslint@^3.0.0-beta.6":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-3.12.0.tgz#f02990b693bd1f52127f13ce14a1e06d8ad84164"
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-3.12.1.tgz#302c463867f38e790bb996eafdf7159c782dc8cf"
   dependencies:
-    "@vue/cli-shared-utils" "^3.12.0"
+    "@vue/cli-shared-utils" "^3.12.1"
     babel-eslint "^10.0.1"
     eslint-loader "^2.1.2"
     globby "^9.2.0"
@@ -860,9 +860,9 @@
     webpack-merge "^4.1.2"
     yorkie "^1.0.3"
 
-"@vue/cli-shared-utils@^3.0.0-beta.6", "@vue/cli-shared-utils@^3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.12.0.tgz#48fcd786129cf02278b9c91f2c3491199f777248"
+"@vue/cli-shared-utils@^3.0.0-beta.6", "@vue/cli-shared-utils@^3.12.1":
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.12.1.tgz#bcf076287ddadeebbb97c6a748dfe9ff50ec8df0"
   dependencies:
     "@hapi/joi" "^15.0.1"
     chalk "^2.4.1"
