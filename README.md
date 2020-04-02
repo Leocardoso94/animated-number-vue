@@ -60,7 +60,7 @@ Following `props` are used while initialization
 | duration `(optional)` | Number            | the duration of animation                                                                      |
 | round `(optional)`    | Number            | remove decimals by rounding the value                                                          |
 | delay `(optional)`    | Number            | the delay of animation                                                                         |
-| easing `(optional)`   | String            | you can found all valid values [here](https://github.com/juliangarnier/anime#easing-functions) |
+| easing `(optional)`   | String            | you can found all valid values [here](https://github.com/juliangarnier/anime/tree/v2.2.0#easing-functions) |
 
 #### Callbacks props
 
