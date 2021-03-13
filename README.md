@@ -58,7 +58,7 @@ Following `props` are used while initialization
 | --------------------- | ----------------- | ---------------------------------------------------------------------------------------------- |
 | value `(required)`    | [ Number, String] | number that will be animated                                                                   |
 | duration `(optional)` | Number            | the duration of animation                                                                      |
-| round `(optional)`    | Number            | remove decimals by rounding the value                                                          |
+| round `(optional)`    | Boolean           | remove decimals by rounding the value                                                          |
 | delay `(optional)`    | Number            | the delay of animation                                                                         |
 | easing `(optional)`   | String            | you can found all valid values [here](https://github.com/juliangarnier/anime/tree/v2.2.0#easing-functions) |
 
