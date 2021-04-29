@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@vue/test-utils"
+    versions:
+    - 1.1.3
+  - dependency-name: "@vue/cli-service"
+    versions:
+    - 4.5.11
