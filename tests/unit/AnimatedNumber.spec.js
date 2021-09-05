@@ -36,6 +36,44 @@ describe('AnimatedNumber.vue', () => {
     }, durationOfAnimation + 100);
   });
 
+  it('should start animation with initial value: integer', (done) => {
+    const start = 15;
+    wrapper = shallow(AnimatedNumber, {
+      propsData: {
+        value,
+        start,
+      },
+    });
+
+    setTimeout(() => {
+      expect(wrapper.text()).toBe(start.toString());
+    }, 0);
+
+    setTimeout(() => {
+      expect(wrapper.text()).toBe(value.toString());
+      done();
+    }, durationOfAnimation + 100);
+  });
+
+  it('should start animation with initial value: float', (done) => {
+    const start = 15.14;
+    wrapper = shallow(AnimatedNumber, {
+      propsData: {
+        value,
+        start,
+      },
+    });
+
+    setTimeout(() => {
+      expect(wrapper.text()).toBe(start.toString());
+    }, 0);
+
+    setTimeout(() => {
+      expect(wrapper.text()).toBe(value.toString());
+      done();
+    }, durationOfAnimation + 100);
+  });
+
   it('respect the time of the delay', (done) => {
     const delay = 50;
     durationOfAnimation = 10;
