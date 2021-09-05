@@ -11,6 +11,10 @@ export default {
       default: '0',
       required: true,
     },
+    start: {
+      type: [Number, String],
+      default: '0',
+    },
     formatValue: {
       type: Function,
       default: value => value,
@@ -38,13 +42,18 @@ export default {
   data() {
     return {
       animatedValue: 0,
+      fromValue: 0,
     };
+  },
+  created() {
+    this.fromValue = this.start;
   },
   mounted() {
     this.animateValue(this.value);
   },
   watch: {
-    value(value) {
+    value(value, prev) {
+      this.fromValue = prev;
       this.animateValue(value);
     },
   },
@@ -62,7 +71,7 @@ export default {
       } = this;
       anime({
         targets: this,
-        animatedValue: value,
+        animatedValue: [this.fromValue, value],
         duration,
         easing,
         update,

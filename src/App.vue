@@ -5,18 +5,25 @@
       <input type="number" v-model="value">
     </div>
     <div>
+      <label for="">Start value: </label>
+      <input type="number" v-model="start">
+    </div>
+    <div>
       <label for="">Duration of animation: </label>
       <input type="number" v-model="duration">
     </div>
     <animated-number
       :value="value"
+      :start="start"
       :formatValue="formatToPrice"
       :duration="duration"
       :run="run"
+      :key="key"
     />
     <hr>
     <button @click="increase">Increase 500</button>
     <button @click="decrease">Decrease 500</button>
+    <button @click="apply">Apply start value</button>
   </div>
 </template>
 <script>
@@ -29,8 +36,10 @@ export default {
   data() {
     return {
       value: 399,
+      start: 0,
       duration: 1000,
       i: 0,
+      key: 0,
     };
   },
   methods: {
@@ -42,6 +51,9 @@ export default {
     },
     decrease() {
       this.value = Number(this.value) - 500;
+    },
+    apply() {
+      this.key = this.key + 1;
     },
     begin(anim) {
       console.log(anim.progress);
